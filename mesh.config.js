@@ -6,7 +6,7 @@ module.exports = {
         graphql: {
           endpoint: 'https://rickandmortyapi.com/graphql',
           operationHeaders: {
-            'access-token': "{context.req.headers.get('access-token')}",
+            'access-token': "{({ x: context.req.headers.get('access-token') }).x}",
           },
         },
       },
