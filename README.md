@@ -4,8 +4,8 @@ GraphQL Mesh: Issue reproduction for the operation headers not being interpolate
 
 ## Getting started
 
-- Install dependencies: `yarn install`
-- Run the server: `yarn start`
+- Install dependencies with `yarn install`
+- Start the services then the gateway with `yarn start`
 - Open the Apollo Sandbox at http://localhost:4000 and execute a query:
 
 ```gql

@@ -1,31 +1,27 @@
 {
   "name": "graphql-mesh-headers-not-interpolated",
   "version": "0.0.0",
-  "main": "server.js",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "lint": "eslint --ext .js --ignore-path .gitignore .",
-    "start": "node -r dotenv/config server"
+    "start": "concurrently --kill-others \"yarn account start\" \"yarn wait-port 4008 && yarn gateway start\"",
+    "account": "yarn workspace account",
+    "gateway": "yarn workspace gateway"
   },
   "engines": {
     "node": "18.14.0",
     "yarn": "1.22.x"
   },
-  "dependencies": {
-    "@graphql-mesh/cli": "^0.82.25",
-    "@graphql-mesh/config": "^10.1.8",
-    "@graphql-mesh/graphql": "^0.34.8",
-    "@graphql-mesh/runtime": "^0.46.16",
-    "@apollo/server": "^4.5.0",
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "graphql": "^16.6.0"
-  },
   "devDependencies": {
+    "concurrently": "^7.6.0",
     "eslint": "^8.36.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.4"
-  }
+    "prettier": "^2.8.4",
+    "wait-port": "^1.0.4"
+  },
+  "workspaces": [
+    "services/*",
+    "gateway"
+  ]
 }

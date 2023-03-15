@@ -62,7 +62,7 @@ async function startServer(schema, { getEnveloped }) {
   httpServer.listen({ host: SERVER_HOST, port: SERVER_PORT })
 
   await new Promise(resolve => httpServer.listen({ host: SERVER_HOST, port: SERVER_PORT }, resolve))
-  console.log(`🚀 Server ready at http://${SERVER_HOST}:${SERVER_PORT}${SERVER_PATH}`)
+  console.log(`🚀 Gateway ready at http://${SERVER_HOST}:${SERVER_PORT}${SERVER_PATH}`)
 
   return apolloServer
 }
