@@ -5,9 +5,9 @@ module.exports = {
       handler: {
         graphql: {
           endpoint: 'http://localhost:4008',
-          operationHeaders: {
-            'access-token': "{context.req.headers.get('access-token')}",
-          },
+          operationHeaders: ({ context }) => ({
+            'access-token': context.req.headers.get('access-token'),
+          }),
         },
       },
     },

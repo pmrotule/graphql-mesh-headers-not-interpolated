@@ -1084,10 +1084,10 @@
     "@graphql-tools/utils" "9.2.1"
     tslib "^2.4.0"
 
-"@graphql-mesh/string-interpolation@0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@graphql-mesh/string-interpolation/-/string-interpolation-0.4.2.tgz#4778ae192731e1dd21383560fcb278c60f25f9bb"
-  integrity sha512-xUSLpir2F4QlAZPVr9GTZ8fOeHYL4PCanykFhIH+CJRFWgolbsUSkTbNBUginQ8pjbQNFEpD2YGgz7N9aJKQ0w==
+"@graphql-mesh/string-interpolation@0.4.2", "@graphql-mesh/string-interpolation@npm:@pmrotule/graphql-mesh-string-interpolation@0.4.3-beta.2":
+  version "0.4.3-beta.2"
+  resolved "https://registry.yarnpkg.com/@pmrotule/graphql-mesh-string-interpolation/-/graphql-mesh-string-interpolation-0.4.3-beta.2.tgz#059b49eb816039df8f517607be790a5242b0c847"
+  integrity sha512-AHrJNipYpdGdICmidm4zH69LlDZ6kEJOomssjVrkgdRWbjmAnaK8+PwydUxV+sFjekxIbD7sWeU/hmhYLfh4Ww==
   dependencies:
     dayjs "1.11.7"
     json-pointer "0.6.2"

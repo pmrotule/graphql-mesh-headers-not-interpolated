@@ -20,6 +20,9 @@
     "prettier": "^2.8.4",
     "wait-port": "^1.0.4"
   },
+  "resolutions": {
+    "@graphql-mesh/string-interpolation": "npm:@pmrotule/graphql-mesh-string-interpolation@0.4.3-beta.2"
+  },
   "workspaces": [
     "services/*",
     "gateway"
